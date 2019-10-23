@@ -1,0 +1,14 @@
+{
+    "scopeName": "iar-keywords.injection",
+    "injectionSelector": "L:source.c",
+    "patterns": [
+        {
+            "name": "storage.modifier.c",
+            "match": "(__ro_placement)\\s"
+        },
+        {
+            "name": "keyword.c",
+            "match": "(__no_init)\\s"
+        }
+    ]
+}

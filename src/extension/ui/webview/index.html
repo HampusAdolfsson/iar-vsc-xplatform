@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAR Home</title>
+    <style>
+        body {
+            padding: 0;
+        }
+        header {
+            background-color: #333333;
+            padding: 10px 0 10px 30px;
+        }
+        header img {
+            float: right;
+            margin-top: -5px;
+        }
+        main {
+            padding: 20px;
+        }
+        .field {
+            margin: 4px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img alt="the IAR logo" src="https://www.iar.com/contentassets/5914b296795648a79588356d02e5ac2f/logosvg.svg"
+            width=100 />
+        <h1>Manage IAR Settings</h1>
+    </header>
+    <main>
+        <div class="field">
+            <span>Embedded Workbench installation path:</span>
+            <input type="text">
+        </div>
+        <div class="field">
+            <span>Active configuration</span>
+            <select>
+                <option>Debug</option>
+                <option>Release</option>
+            </select>
+        </div>
+
+        <h2>Debug configuration</h2>
+        <div class="field">
+            <span>Driver</span>
+            <select>
+                <option>Simulator</option>
+                <option>I-jet</option>
+                <option>J-LINK</option>
+            </select>
+        </div>
+        <div class="field">
+            <span>Stop on entry</span>
+            <input type="checkbox">
+        </div>
+    </main>
+</body>
+</html>
